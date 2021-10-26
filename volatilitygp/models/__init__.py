@@ -1,0 +1,2 @@
+from .single_task_variational_gp import SingleTaskVariationalGP, FixedNoiseVariationalGP
+from .model_list_gp import ModelListGP_N as ModelListGP
