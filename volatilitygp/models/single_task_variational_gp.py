@@ -355,6 +355,8 @@ class _SingleTaskVariationalGP(ApproximateGP):
         #    targets = targets.expand(targets.shape[0], *inputs.shape[:-2], targets.shape[-1])
         # finally we fantasize wrt targets
         if noise is not None:
+            if noise.shape[-1] != targets.shape[-1]:
+                noise = noise.unsqueeze(-1)
             kwargs["noise"] = noise
         if is_non_gaussian and inputs.shape[:-1] != targets.shape:
             inputs = inputs.expand(*targets.shape[:-1], *inputs.shape[-1:])
