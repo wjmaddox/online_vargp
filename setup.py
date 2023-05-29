@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 import os
 import sys
 
@@ -13,14 +13,14 @@ else:
 
 setup(
     name="volatilitygp",
-    version="alpha",
+    version="0.0.1",
     description=("Repo for SVGPs"),
     long_description=long_description,
     author="",
     author_email="",
     url="",
     license="MPL-2.0",
-    packages=["volatilitygp"],
+    packages=find_packages(exclude=["notebooks", "experiments", "tests"]),
     install_requires=[],
     include_package_data=True,
     classifiers=[
