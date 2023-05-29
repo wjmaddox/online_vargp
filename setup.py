@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 import os
 import sys
 
@@ -20,7 +20,7 @@ setup(
     author_email="",
     url="",
     license="MPL-2.0",
-    packages=["volatilitygp"],
+    packages=find_packages(exclude=["notebooks", "experiments", "tests"]),
     install_requires=[],
     include_package_data=True,
     classifiers=[
