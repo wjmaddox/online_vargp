@@ -13,7 +13,7 @@ else:
 
 setup(
     name="volatilitygp",
-    version="alpha",
+    version="0.0.1",
     description=("Repo for SVGPs"),
     long_description=long_description,
     author="",
