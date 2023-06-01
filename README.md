@@ -1,6 +1,6 @@
 # Conditioning Sparse Variational Gaussian Processes for Online Decision-making
 
-This repository contains a PyTorch and GPyTorch implementation of the paper "Conditioning Sparse Variational Gaussian Processes for Online Decision-making."
+This repository contains a PyTorch and GPyTorch implementation of the paper ["Conditioning Sparse Variational Gaussian Processes for Online Decision-making"](https://openreview.net/forum?id=CCvpHGFOzC3) (NeurIPS 2021).
 
 ## Introduction
 
